@@ -6,6 +6,7 @@ d3.csv('data2000.csv', d3.autoType).then(data => {
     marks: [
       Plot.dot(data, {
         x: 'fertility',
+        
       }),
     ],
   })
