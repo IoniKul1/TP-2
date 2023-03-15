@@ -2,7 +2,7 @@ d3.csv('data2000.csv', d3.autoType).then(data => {
   console.log(data)
   console.log('hola ioni')
   // Guardamos el svg generado en la variable chart
-  let chart = Plot.barx({
+  let chart = Plot.plot({
     marks: [
       Plot.dot(data, {
         x: 'fertility',
