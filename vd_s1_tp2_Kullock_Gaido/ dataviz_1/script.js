@@ -9,7 +9,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     grid: true,
     line: true,
     nice: true,
-    label: '                                                                                           Edad optima para tu proxima misión',
+    label: 'Edad optima para tu proxima misión',
     height: 500,
     marginLeft: 100,
   })
