@@ -1,33 +1,31 @@
   d3.csv('as.csv', d3.autoType).then(data => {
     console.log(data)
     // Guardamos el svg generado en la variable chart
-    let chart = Plot.plot({
-      marks:[
-          Plot.dot( data,{
-              x: "anio_nacimiento",
-              y: "mision_hs",
-              fill: "Continente",
-              opacity: 1,
-            Plot.text(data ,{
-              x: "anio_nacimiento",
-              y: "mision_hs",
-              text: "Continente",
-              })
-            }),
-      ],
+    let chart =   Plot.plot({
       grid: true,
-      line: true,
       nice: true,
-      label: '-',
+      color: {
+        legend: true,
+      },
+
+      marks: [
+        Plot.barX(data, {
+          x: 1,
+          y: "nacionalidad",
+          fill: "Continente",
+          fillOpacity: 1,
+          r: 20
+        }),
+      ],
       height: 500,
       width: 1000,
-      marginLeft: 100,
+      marginLeft: 150,
       marginTop: 40,
       marginBottom: 40,
     
-    })
+    });
     // Agregamos chart al div#chart de index.html
     d3.select('#chart').append(() => chart)
     
   });
-  
+

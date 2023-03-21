@@ -1,14 +1,25 @@
-d3.csv('astronautass.csv', d3.autoType).then(data => {
+d3.csv('astronautas.csv', d3.autoType).then(data => {
   console.log(data)
   // Guardamos el svg generado en la variable chart
   let chart = Plot.plot({
     marks:[
-        Plot.dot(
+        Plot.line(
           data,
-          Plot.groupX({ y: "mean" }, { x: "edad_mision", y: "mision_hs", fill: 'red'}) )],
+          Plot.groupX({ 
+            y: "mean" }, 
+          { x: "edad_mision", 
+            y: "mision_hs", 
+          }) ),
+          Plot.dot(data, 
+            Plot.groupX({ 
+            y: "mean" }, 
+          { x: "edad_mision", 
+            y: "mision_hs", 
+                     
+          }) 
+          )],
     style: {
-      backgroundColor: "black",
-      color: "white",
+      color: "black",
       fontFamily: "monospace",
       fontSize: "12px",
       overflow: "visible"
@@ -16,7 +27,7 @@ d3.csv('astronautass.csv', d3.autoType).then(data => {
     grid: true,
     line: true,
     nice: true,
-    label: '-',
+    label: 'EDAD OPTIMA',
     height: 500,
     width: 1000,
     marginLeft: 100,

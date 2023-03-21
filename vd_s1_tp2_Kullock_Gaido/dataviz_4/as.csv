@@ -1,4 +1,4 @@
-nombre,genero,anio_nacimiento,nacionalidad,status,ocupacion,anio_mision,edad_mision,mision_hs,eva_mision_hs,Continente,Total 
+nombre,genero,anio_nacimiento,nacionalidad,status,ocupacion,anio_mision,edad_mision,mision_hs,eva_mision_hs,Continente,total
 Aleksandr Kaleri,masculino,1956,U.S.S.R/Rusia,civil,ingeniero aeroespacial,2010,54,3824,0,Asia,68
 Yuri Malenchenko,masculino,1961,U.S.S.R/Rusia,militar,comandante,2012,51,3047,5.85,Asia,68
 Yuri Malenchenko,masculino,1961,U.S.S.R/Rusia,militar,comandante,2015,54,1477,4.72,Asia,68
