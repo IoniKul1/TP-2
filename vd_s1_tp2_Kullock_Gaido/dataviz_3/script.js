@@ -1,15 +1,24 @@
-d3.csv('data2000.csv', d3.autoType).then(data => {
-  console.log(data)
-  console.log('hola ioni')
-  // Guardamos el svg generado en la variable chart
+d3.csv("astronautas.csv", d3.autoType).then((data) => {
   let chart = Plot.plot({
     marks: [
       Plot.dot(data, {
-        x: 'fertility',
+        x: 'anio_mision',
+        y: 'edad_mision',
         
+        stroke: 'edad_mision',
       }),
     ],
-  })
-  // Agregamos chart al div#chart de index.html
-  d3.select('#chart').append(() => chart)
-})
+    color: {
+     
+    },
+    grid: true,
+    line: true,
+    nice: true,
+    symbol: {
+      legend: "true",
+    },
+  });
+
+  d3.select("#chart").append(() => chart);
+});
+
