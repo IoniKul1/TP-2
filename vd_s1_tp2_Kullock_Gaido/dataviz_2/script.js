@@ -11,6 +11,7 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
           })
       )
     ],
+
   grid:true,
   line:true,
   nice:true,
@@ -21,6 +22,7 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
     color: "white",
     fontFamily: "monospace",
     fontSize: "12px",
+    
    },
    marginLeft: 55,
 	 marginRight: 55,
@@ -30,6 +32,12 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
 	 insetBottom: 10,
 	 insetLeft:10,
 	 insetRight: 10,
+   x: {
+    label:"OCUPACIONES",
+   },
+   y: {
+    label:"CANTIDAD DE OCUPANTES",
+   }
   });
   
   d3.select("#chart").append(() => chart);
