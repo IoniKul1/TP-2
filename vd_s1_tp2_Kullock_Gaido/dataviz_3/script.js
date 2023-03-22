@@ -1,27 +1,27 @@
 d3.csv("astronautas.csv", d3.autoType).then((data) => {
   let chart = Plot.plot({
-    marks: [
-      Plot.line(
-        data,
-        Plot.groupX({ y: "count" },
-         { x: "nacionalidad", 
-         y: "mison_hs", 
-         
-         
-          })
-      )
-    ],
-    x: {
-      tickRotate: -9,
-      ticks: 5,
-      tickSize: 1,
-      
-    },
-
+    marks:[
+        Plot.line(
+          data,
+          Plot.groupX({ 
+            y: "mean" }, 
+          { x: "nacionalidad", 
+            y: "mision_hs", 
+          }) ),
+          Plot.dot(data, 
+            Plot.groupX({ 
+            y: "mean" }, 
+          { x: "nacionalidad", 
+            y: "mision_hs", 
+                     
+          }) 
+          )],
+ 
+  
   grid:true,
   line:true,
   nice:true,
-  width: 1800,
+  width: 600,
   height: 500,
   style: {
     color: "black",
@@ -32,13 +32,14 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
    marginLeft: 55,
 	 marginRight: 55,
 	 marginTop: 50,
-	 marginBottom: 60,
+	 marginBottom: 200,
 	 insetTop: 10,
 	 insetBottom: 10,
 	 insetLeft:10,
 	 insetRight: 10,
    x: {
     label:"Nacionalidades",
+    tickRotate: -70,
    },
    y: {
     label:"Horas de Mison",
@@ -51,13 +52,6 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
 
 
 Plot.plot({
-  x: {
-    tickFormat: d3.utcFormat("%Y"), 
-    domain: [d3.utcYear.offset(d3.utcYear(), -12), d3.utcYear()]
-  }, 
-  width: 714
-})
-Plot.plot({
   marks: [
     Plot.dot(
       [{ value: 0.1 }, { value: 0.25 }, { value: 0.3 }, { value: 0.42 }],
@@ -65,7 +59,7 @@ Plot.plot({
     )
   ],
   x: {
-    tickRotate: -45,
+    tickRotate: -39,
     ticks: 5,
     tickSize: 5,
     line: true,
