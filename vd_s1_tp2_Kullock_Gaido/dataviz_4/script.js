@@ -22,6 +22,10 @@
       marginLeft: 150,
       marginTop: 40,
       marginBottom: 40,
+      x: {
+        label:"Cantidad de personas por pais",
+       },
+       label: "Paises"
     
     });
     // Agregamos chart al div#chart de index.html
