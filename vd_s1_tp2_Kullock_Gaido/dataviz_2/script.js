@@ -5,7 +5,7 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
         data,
         Plot.groupX({ y: "count" },
          { x: "ocupacion", 
-         y: "price_in_usd", 
+         y: "", 
          fill:"black",
          sort: { x: "y", reverse: true },
           })
