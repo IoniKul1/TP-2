@@ -15,11 +15,11 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
   grid:true,
   line:true,
   nice:true,
-  width: 1000,
+  width: 780,
   height: 500,
   style: {
     color: "black",
-    fontFamily: "monospace",
+    fontFamily: "helvetica",
     fontSize: "12px",
     
    },

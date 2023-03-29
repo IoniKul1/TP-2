@@ -65,7 +65,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     nice: true,
     label: 'Edad optima',
     height: 500,
-    width: 1000,
+    width: 700,
     marginLeft: 100,
     marginTop: 60,
     marginBottom: 60,
