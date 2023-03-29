@@ -14,11 +14,12 @@
           y: "nacionalidad",
           fill: "Continente",
           fillOpacity: 1,
-          r: 20
+          r: 20,
+          sort: {y: "x", reverse: true}
         }),
       ],
       height: 500,
-      width: 1000,
+      width: 650,
       marginLeft: 150,
       marginTop: 40,
       marginBottom: 40,
