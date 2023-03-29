@@ -1,18 +1,19 @@
-  d3.csv('as.csv', d3.autoType).then(data => {
+d3.csv('as.csv', d3.autoType).then(data => {
     console.log(data)
-    let america = data.filter(d => d.Continente == "America")
-    console.log(america)
- 
+    let asia = data.filter(d => d.Continente == "Asia")
+    console.log(asia)
     // Guardamos el svg generado en la variable chart
-    let chart =   Plot.plot({
+    let chart1 =   Plot.plot({
       grid: true,
       nice: true,
       color: {
         legend: true,
         scheme:"blues",
       },
+      
+
       marks: [
-        Plot.barY(america, Plot.groupX(
+        Plot.barY(asia, Plot.groupX(
           {
             y:"count"
           },
@@ -36,6 +37,6 @@
        },
     });
     // Agregamos chart al div#chart de index.html
-    d3.select('#chart').append(() => chart)
+    d3.select('#chart1').append(() => chart1)
     
   });

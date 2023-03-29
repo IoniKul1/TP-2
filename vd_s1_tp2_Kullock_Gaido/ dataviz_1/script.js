@@ -67,8 +67,8 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     height: 500,
     width: 700,
     marginLeft: 100,
-    marginTop: 60,
-    marginBottom: 60,
+    marginTop: 50,
+    marginBottom: 50,
     x: {
       label:"Edades",
       ticks: 4,
