@@ -22,11 +22,7 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
   grid:true,
   line:true,
   nice:true,
-<<<<<<< Updated upstream
   width: 780,
-=======
-  width: 500,
->>>>>>> Stashed changes
   height: 500,
   style: {
     color: "black",

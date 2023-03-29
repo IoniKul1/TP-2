@@ -32,11 +32,7 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
    marginLeft: 55,
 	 marginRight: 55,
 	 marginTop: 50,
-<<<<<<< Updated upstream
 	 marginBottom: 100,
-=======
-	 marginBottom: 112,
->>>>>>> Stashed changes
 	 insetTop: 10,
 	 insetBottom: 10,
 	 insetLeft:10,

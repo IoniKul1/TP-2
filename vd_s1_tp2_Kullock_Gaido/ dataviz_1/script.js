@@ -18,7 +18,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
               y: "mean" }, 
             { x: "edad_mision", 
               y: "mision_hs",
-              stroke: "red", 
+              stroke: "blue", 
               
             }) ),
           Plot.dot(data, 
@@ -34,7 +34,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             y: "mean" }, 
           { x: "edad_mision", 
             y: "mision_hs", 
-            fill: "red",   
+            fill: "blue",   
           }) 
           ),
           Plot.rect({
@@ -59,6 +59,10 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       fontFamily: "Helvetica",
       fontSize: "12px",
       overflow: "visible"
+    }, color: {
+      legend: true,
+      scheme: 'blues',
+    
     },
     grid: true,
     line: true,
