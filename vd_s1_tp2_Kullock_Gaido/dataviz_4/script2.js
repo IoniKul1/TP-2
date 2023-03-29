@@ -4,7 +4,7 @@ d3.csv('as.csv', d3.autoType).then(data => {
     let Europa = data.filter(d => d.Continente == "Europa")
     console.log(Europa)
     // Guardamos el svg generado en la variable chart
-    let chart =   Plot.plot({
+    let chart2 =   Plot.plot({
       grid: true,
       nice: true,
       color: {
@@ -38,6 +38,6 @@ d3.csv('as.csv', d3.autoType).then(data => {
        },
     });
     // Agregamos chart al div#chart de index.html
-    d3.select('#chart2').append(() => chart)
+    d3.select('#chart2').append(() => chart2)
     
   });
