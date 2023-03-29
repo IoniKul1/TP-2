@@ -1,21 +1,16 @@
 d3.csv("astronautas.csv", d3.autoType).then((data) => {
   let chart = Plot.plot({
     marks:[
-        Plot.line(
+        Plot.barY(
           data,
           Plot.groupX({ 
             y: "mean" }, 
           { x: "nacionalidad", 
             y: "mision_hs", 
-          }) ),
-          Plot.dot(data, 
-            Plot.groupX({ 
-            y: "mean" }, 
-          { x: "nacionalidad", 
-            y: "mision_hs", 
-                     
-          }) 
-          )],
+            sort: { x: "y", reverse: true },
+            
+          })
+  )],
  
   
   grid:true,
@@ -40,6 +35,8 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
    x: {
     label:"Nacionalidades",
     tickRotate: -70,
+    round : true, 
+    
    },
    y: {
     label:"Horas de Mison",
