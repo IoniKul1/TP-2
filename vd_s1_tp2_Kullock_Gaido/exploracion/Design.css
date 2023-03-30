@@ -1,10 +1,10 @@
 .content {
     height: 1000px;
-    display:contents;
     flex-direction:column;
-    justify-content: right;
+    justify-content:right;
     align-items: center;
-    background-image: url('marmol.jpg');
+    background-image: url('https://media1.giphy.com/media/sQxjYIG40lpjkEDbARF/giphy.gif?cid=ecf05e473w1kkfiook5wp0hgy6b9mv7wvfpx967y1vchivin&rid=giphy.gif&ct=g');
+    image-rendering: pixelated;
 }
 .parallax {
     background-image: url('marmol.jpg');
@@ -22,7 +22,12 @@
 }
 
 
-a {
-    font-size: 2rem;
-    margin: 1rem;
+h1{
+    font-size: 3rem;
+    padding-top: 260px;
+    margin: -10%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-anchor: initial;
+    
 }
