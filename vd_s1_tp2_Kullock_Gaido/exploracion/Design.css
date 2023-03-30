@@ -1,0 +1,28 @@
+.content {
+    height: 1000px;
+    display:contents;
+    flex-direction:column;
+    justify-content: right;
+    align-items: center;
+    background-image: url('marmol.jpg');
+}
+.parallax {
+    background-image: url('marmol.jpg');
+    background-attachment:unset;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    display:block;
+    flex-direction:column;
+    justify-content: right;
+    align-items: center;
+}
+
+
+a {
+    font-size: 2rem;
+    margin: 1rem;
+}
