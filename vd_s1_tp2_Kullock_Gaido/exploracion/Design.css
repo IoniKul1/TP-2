@@ -1,33 +1,210 @@
-.content {
-    height: 1000px;
-    flex-direction:column;
-    justify-content:right;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color:rgb(6, 9, 58);
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+header {
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 100;
+
+}
+
+.logo {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+}
+
+.navigation{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 9px 15px;
+    border-radius: 25px;
+    margin: 10px 10px;
+    font-weight: 600;
+    margin-bottom: x;
+    justify-content: center;
     align-items: center;
-    background-image: url('https://media1.giphy.com/media/sQxjYIG40lpjkEDbARF/giphy.gif?cid=ecf05e473w1kkfiook5wp0hgy6b9mv7wvfpx967y1vchivin&rid=giphy.gif&ct=g');
-    image-rendering: pixelated;
+    position: relative;
+    display: flex;
+    border: 2px solid #fff;
+    background-color: #000000;
+    
+    
+}
+
+.navigation_1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 9px 15px;
+    border-radius: 25px;
+    margin: 0 10px;
+    font-weight: 600;
+    margin-bottom: x;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    background-color: #000000;
+    border: 2px solid #fff;
+    
+}
+
+.block {
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px 0;
+    position: relative;
+    border-radius: 25px;
+    margin-top: 600px;
 }
 .parallax {
-    background-image: url('marmol.jpg');
-    background-attachment:unset;
+    background-image: url("IMG/earth.jpg");
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
+    overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1000px;
-    display:block;
-    flex-direction:column;
-    justify-content: right;
+    height: 80vh;
+    margin-bottom: -10%;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: rgb(82, 82, 82);
+    color: #ffffff;
+
+}
+.navigation_1 a:hover,
+.navigation_1 a.active {
+    background: rgb(82, 82, 82);
+    color: #ffffff;
+
+}
+
+#text {
+    position: absolute;
+    background-color: #000000;
+    border-radius: 100px;
+    font-size: 5em;
+    color: #ffffff;
+}
+
+#text1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: top;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 2em;
+    color: #000000;
+}
+
+#text2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: top;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 2em;
+    color: #000000;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+.navigation_1-tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .navigation_1-link:hover .navigation_1-tooltip {
+    display: block;
+  }
+
+  .block {
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
     align-items: center;
-}
-
-
-h1{
-    font-size: 3rem;
-    padding-top: 260px;
-    margin: -10%;
-    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    flex-direction: column; /* Cambiamos la dirección del flexbox para poner los elementos uno encima del otro */
+    margin: 50px 0;
+    position: relative;
+    border-radius: 25px;
+    margin-top: 600px;
+  }
+  
+  .block h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
     text-align: center;
-    text-anchor: initial;
-    
-}
+  }
+  
+  .block h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .block svg {
+    width: 760px;
+    height: 760px;
+    margin-bottom: 1px;
+  }
+  
+  .block .chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .chart-container {
+    width: 800px;
+    height: 800px;
+  }
+

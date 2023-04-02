@@ -1,30 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Astronautas</title>
+        <title>ASTROS</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
         <link rel="stylesheet" href="Design.css">
     </head>
     <body>
-        <div class="content">
-            <h1>Astronautas</h1>
-        </div>
-        <div class="content">
-            <a href="../dataviz_1/index.html"><img src="1.png" alt="1er graph"></a>
-        </div>
+        <!-- Bloque con el logo y la navegación -->
+        <header>
+            <script>
+                window.onload = function() {
+                    window.scrollTo(0, 0);
+                }
+            </script>
+            <style>
+                h3 {
+                  color: hwb(0 0% 100%);
+                  font-family: 'Poppins', sans-serif;                  
+                  font-size: small;
+                  font-variant:normal;
+                  font-weight: 500;
+                }
+                </style>
+                <h2><img src="IMG/astro.webp" height="100" width="100"></h2>
 
-        <div class="content">
-            <a href="../dataviz_2/index.html"><img src="2.png" alt="2do graph"></a>
-        </div>
+                <nav class="navigation_1">
+                <a href="#" class="navigation_1-link">
+                        <span>Integrantes del equipo</span>
+                        <div class="navigation_1-tooltip">Yoni Kullock & Martin Gaido</div>
+                      </a>
+                <a href="#" class="navigation_1-link">
+                        <span>Fuentes</span>
+                        <div class="navigation_1-tooltip">astronautas.csv</div>
+                </a>
+                </nav>
 
-        <div class="content">
-            <a href="../dataviz_3/index.html"><img src="3.png" alt="3er graph"></a>
-        </div>
-        
-        <div class="content">
-            <a href="../dataviz_4/index.html"><img src="4.png" alt="4to graph"></a>
-        </div>        
-    </div>
-        <script src="home.js"></script>
+        </header>
+        <section class="parallax">
+            <h2 id="text">Astronautas Graficos</h2>
+        <section class="navigation">
+            <a href="#chart1">Productividad según edad</a>
+            <a href="#chart2">Ocupaciónes según genero</a>
+            <a href="#chart3">Productividad según Paises</a>
+            <a href="#chart4">Cantidad de Astronautas por continente</a>
+        </section>
+    </section>
+
+        <!-- Bloque con el primer gráfico y la descripción -->
+
+        <div class="block">
+            <div class="chart-container">
+              <svg><div id="chart1"></div></svg>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+          </div>
+
+        <!-- Bloque con el segundo gráfico y la descripción -->
+
+        <div class="block">
+            <div class="chart-container">
+              <svg><div id="chart2"></div></svg>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+          </div>
+
+        <!-- Bloque con el tercer gráfico y la descripción -->
+
+        <div class="block">
+            <div class="chart-container">
+              <svg><div id="chart3"></div></svg>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+          </div>
+
+        <!-- Bloque con el cuarto gráfico y la descripción -->
+
+        <div class="block">
+            <div class="chart-container">
+              <svg><div id="chart4"></div></svg>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+          </div>
+
+        <!-- Scripts -->
+        <script src="Charts/chart1.js"></script>
+        <script src="Charts/chart2.js"></script>
+        <script src="Charts/chart3.js"></script>
+        <script src="Charts/chart4.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-array@3"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-scale@3"></script>
+
     </body>
 </html>
+    
+

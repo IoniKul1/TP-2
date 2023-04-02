@@ -1,4 +1,4 @@
-d3.csv("astronautas.csv", d3.autoType).then((data) => {
+d3.csv("astronautass.csv", d3.autoType).then((data) => {
   let chart3 = Plot.plot({
     marks:[
         Plot.barY(
@@ -49,6 +49,7 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
   });
   
   d3.select("#chart3").append(() => chart3);
+
 });
 
 

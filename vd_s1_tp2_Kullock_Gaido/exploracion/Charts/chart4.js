@@ -1,4 +1,4 @@
-d3.csv('../exploracion/astronautass.csv', d3.autoType).then(data => {
+d3.csv('astronautass.csv', d3.autoType).then(data => {
   console.log(data)
   let america = data.filter(d => d.Continente == "America")
   console.log(america)
@@ -71,6 +71,4 @@ d3.csv('../exploracion/astronautass.csv', d3.autoType).then(data => {
   });
   // Agregamos chart al div#chart de index.html
   d3.select('#chart4').append(() => chart4)
-  chart4.draw();
-
 });

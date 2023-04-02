@@ -1,4 +1,4 @@
-d3.csv('../exploracion/astronautass.csv', d3.autoType).then((data) => {
+d3.csv('astronautass.csv', d3.autoType).then((data) => {
   let chart2 = Plot.plot({
     marks: [
       Plot.barY(
@@ -7,8 +7,6 @@ d3.csv('../exploracion/astronautass.csv', d3.autoType).then((data) => {
          { x: "ocupacion", 
          y: "", 
          fill:"genero",
-        
-         
          sort: { x: "y", reverse: true },
           })
       )
@@ -16,8 +14,6 @@ d3.csv('../exploracion/astronautass.csv', d3.autoType).then((data) => {
     color: {
       legend: true,
       scheme: 'blues',
-      
-    
     },
   grid:true,
   line:true,
@@ -49,6 +45,6 @@ d3.csv('../exploracion/astronautass.csv', d3.autoType).then((data) => {
   });
   
   d3.select("#chart2").append(() => chart2);
-  chart2.draw();
+
 });
 
