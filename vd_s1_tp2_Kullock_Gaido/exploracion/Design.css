@@ -102,6 +102,7 @@ header {
     justify-content: center;
     flex-direction: row;
     position: relative;
+    margin-top: 600px;
     border-radius: 25px;
    
 }

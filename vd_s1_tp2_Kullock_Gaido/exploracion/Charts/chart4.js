@@ -51,7 +51,7 @@ d3.csv('astronautass.csv', d3.autoType).then(data => {
         },
         {
         x: "nacionalidad",
-        fillOpacity: 0.1,
+        fillOpacity: 0.6,
         sort: {y: "x", reverse: true},
         facet:"exclude",
       })),
@@ -61,6 +61,13 @@ d3.csv('astronautass.csv', d3.autoType).then(data => {
     marginLeft: 150,
     marginTop: 40,
     marginBottom: 150,
+    style: {
+      color: "white",
+      fontFamily: "Helvetica",
+      fontSize: "12px",
+      overflow: "visible",
+      background: "transparent",
+    },
     x: {
       label:"Cantidad de personas por pais",
       tickRotate:-75,
@@ -72,3 +79,4 @@ d3.csv('astronautass.csv', d3.autoType).then(data => {
   // Agregamos chart al div#chart de index.html
   d3.select('#chart4').append(() => chart4)
 });
+

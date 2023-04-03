@@ -26,7 +26,7 @@ d3.csv('astronautass.csv', d3.autoType).then(data => {
             y: "mean" }, 
           { x: "edad_mision", 
             y: "mision_hs", 
-            fill: "black"      
+            fill: "white"      
           }) 
           ),
           Plot.dot(datafilter, 
@@ -55,13 +55,13 @@ d3.csv('astronautass.csv', d3.autoType).then(data => {
           }),
         ],
     style: {
-      color: "black",
+      color: "white",
       fontFamily: "Helvetica",
       fontSize: "12px",
       overflow: "visible",
-       // Añadir background azul
+      background: "transparent",
     }, color: {
-      legend: true,
+      legend: false,
       scheme: 'blues',
     
     },
