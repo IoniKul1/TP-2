@@ -21,11 +21,12 @@ d3.csv('astronautass.csv', d3.autoType).then((data) => {
   width: 780,
   height: 500,
   style: {
-    color: "black",
-    fontFamily: "helvetica",
+    color: "white",
+    fontFamily: "Helvetica",
     fontSize: "12px",
-    
-   },
+    overflow: "visible",
+    background: "transparent",
+  },
    marginLeft: 55,
 	 marginRight: 55,
 	 marginTop: 50,

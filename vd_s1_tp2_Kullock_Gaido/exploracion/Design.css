@@ -103,7 +103,6 @@ header {
     flex-direction: row;
     margin: 50px 0;
     position: relative;
-    border-radius: 25px;
     margin-top: 600px;
 }
 .parallax {
