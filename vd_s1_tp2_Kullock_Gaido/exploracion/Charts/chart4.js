@@ -11,7 +11,7 @@ d3.csv('astronautass.csv', d3.autoType).then(data => {
     grid: true,
     nice: true,
     color: {
-      legend: true,
+      legend: false,
       scheme:"blues",
     },
     facet: {

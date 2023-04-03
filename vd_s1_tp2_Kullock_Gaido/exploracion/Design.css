@@ -101,10 +101,9 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin: 50px 0;
     position: relative;
     border-radius: 25px;
-    margin-top: 600px;
+   
 }
 .parallax {
     background-image: url("IMG/mooon.jpeg");
@@ -190,12 +189,12 @@ html{
     margin: 50px 0;
     position: relative;
     border-radius: 25px;
-    margin-top: 600px;
+   
   }
   
   .block h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    
     text-align: center;
   }
   
@@ -203,7 +202,7 @@ html{
     font-size: 1.2em;
     font-weight: normal;
     margin-top: 0;
-    margin-bottom: 40px;
+    
     text-align: center;
   }
   
@@ -218,7 +217,7 @@ html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 40px;
+    
   }
 
   .chart-container {
