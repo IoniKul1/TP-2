@@ -1,21 +1,26 @@
 d3.csv('../exploracion/astronautass.csv', d3.autoType).then((data) => {
-  let chart2 = Plot.plot({
-    marks: [
-      Plot.barY(
-        data,
-        Plot.groupX({ y: "count" },
-         { x: "ocupacion", 
-         y: "", 
-         fill:"genero",
+
+const filteredData = data.filter(d => d.nacionalidad === 'EE.UU.' || d.nacionalidad === 'U.S.S.R/Rusia'|| d.nacionalidad === 'Francia'|| d.nacionalidad === 'Reino Unido' || d.nacionalidad === 'Emiratos Arabes Unidos'
+);
+
+  
+        let chart2 = Plot.plot({
+          marks: [
+            Plot.barY(
+              filteredData,
+              Plot.groupX({ y: "count" },
+               { x: "ocupacion", 
+               y: "", 
+               fill:"nacionalidad",
+               sort: { x: "y", reverse: true },
+              }) ),
         
-         
-         sort: { x: "y", reverse: true },
-          })
-      )
     ],
     color: {
       legend: true,
-      scheme: 'blues',
+      
+      
+           
       
     
     },
