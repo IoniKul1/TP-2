@@ -33,8 +33,8 @@ header {
     z-index: 99;
     border: none; 
     outline: none; 
-    background-color: rgb(137, 137, 137);
-    color: white; 
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(216, 0, 0); 
     cursor: pointer; 
     padding: 15px; 
     border-radius: 10px;
@@ -45,38 +45,55 @@ header {
     background-color: #555; /* Add a dark-grey background on hover */
   }
 
+  .btn a {
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-weight: 600;
+    margin-bottom: x;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    display: inline-block    
+}
+
 .logo {
     font-size: 2em;
     color: rgb(0, 0, 0);
     pointer-events: none;
 }
 
-.navigation{
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-    }
-
-.navigation a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 9px 15px;
-    border-radius: 25px;
-    margin: 10px 10px;
-    font-weight: 600;
-    margin-bottom: x;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    display: flex;
-    border: 2px solid #fff;
-    background-color: #000000;
-    
-    
+.navigation {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 200px;
+  z-index: 100;
+  text-align: left;
+  border-left: 3px solid #ccc;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  width: auto; /* Ancho inicial de la barra vertical */
+  overflow-x: hidden; /* Oculta el contenido que no está visible en el ancho inicial */
 }
 
+.navigation:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 200px; /* Ancho de la barra vertical al pasar el mouse */
+  overflow-x: visible; /* Muestra todo el contenido al ampliar el ancho */
+}
+
+.navigation a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #fff;
+  text-decoration:none;
+}
 .navigation_1 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -88,35 +105,48 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    display: inline-block;
-    background-color: #000000;
-    border: 2px solid #fff;
-    
+    display: inline-block    
 }
 
 .block {
-    background-color: rgb(255, 255, 255);
+    background-image: url("IMG/stars.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin: 50px 0;
     position: relative;
-    margin-top: 600px;
+    margin-top: 20px;
+}
+
+.block_4 {
+  background-image: url("IMG/stars.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  margin-top: -140px;
 }
 .parallax {
     background-image: url("IMG/mooon.jpeg");
+    box-sizing: content-box;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    margin-bottom: -10%;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
 }
 
 .navigation a:hover,
@@ -179,37 +209,29 @@ html{
     display: block;
   }
 
-  .block {
-    background-color: rgb(255, 255, 255);
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; 
-    margin: 50px 0;
-    position: relative;
-    border-radius: 25px;
-    margin-top: 600px;
-  }
   
+
   .block h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #fff;
   }
   
   .block h3 {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
+    color: #fff;
   }
   
   .block svg {
-    width: 760px;
-    height: 760px;
+    width: -130%;
+    height: auto;
     margin-bottom: 1px;
+    border: #000000;
   }
   
   .block .chart-container {
@@ -221,6 +243,63 @@ html{
   }
 
   .chart-container {
-    width: 780px;
-    height: 780px;
+    width: 100%;
+    }
+
+  .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 200px;
+  }
+
+  .block_4 svg {
+    width: auto;
+    height: auto;
+    margin-bottom: 1px;
+    margin-left: 1%;
+    border-radius: 5%;
+    border: #000000;
+  }
+
+  .title {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .title h3 {
+    margin-top: auto;
+  }
+
+  .container4 {
+    display: flex;
+    display: table-column;
+    margin: 200px;
+  }
+
+  .chart{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+  }
+
+  .title h4 {
+    color: #fff;
+    font-weight: 500;
+    margin: auto;
+  }
+
+  .texto_normal {
+    margin: 200px;
+    color: #ffffff;
+  }
+
+  .texto_normal h4 {
+    font-weight: 500;
   }
