@@ -45,7 +45,7 @@ d3.csv("astronautass.csv", d3.autoType).then((data) => {
     
    },
    y: {
-    label:"Horas de Mison",
+    label:"Horas de Misión",
    }
   });
   
