@@ -35,13 +35,13 @@
                         <span>Fuentes</span>
                         <div class="navigation_1-tooltip">astronautas.csv</div>
                 </a>
-                <a href="#https://github.com/IoniKul1/TP-2/tree/main/vd_s1_tp2_Kullock_Gaido" class="navigation_1-link">
+                <a href="https://github.com/IoniKul1/TP-2/tree/main/vd_s1_tp2_Kullock_Gaido" class="navigation_1-link">
                   <span>Github</span>
                 </a>
                 </nav>
 
         </header>
-        <section class="parallax">
+        <section class="parallax" id="0">
             <h2 id="text">Astronautas Graficos</h2>
             <nav class="navigation_2" id="start">
               <a href="#1" class="navigation_1-link" style="margin-left:157%;">
@@ -52,6 +52,7 @@
 
 
         <section class="navigation" >
+            <a href="#0">0. Start</a>
             <a href="#1">1. Introducción</a>
             <a href="#2">2. Productividad según edad</a>
             <a href="#3">3. Ocupaciónes según genero</a>
@@ -62,7 +63,7 @@
   
     <div class="block"id="1">
         <div class="texto_normal">
-          <h2><img src= "/vd_s1_tp2_Kullock_Gaido/exploracion/IMG/astro3d.webp" height="200" width="200"></h2>
+          <h2><img src= "/vd_s1_tp2_Kullock_Gaido/Principal/IMG/astro3d.webp" height="200" width="200"></h2>
           <h2>1. Introducción: Productivad de misiones espaciales en los ultimos 10 años</h2>
           <h4>
             En este proyecto buscamos mostrar la productivad de los proyectos espaciales realizados por distintos paieses en los ultimos diez años. Para realizar esto tomaremos  un dataset con informacion de los distintos paises que evaluaremos. este contiene a los astronautas, sus edades, su genero, ocupacion,  cantidad de horas de mision realizadas dentro y fuera de la nave, el pais de origen, si son de estado civil o militar en terminos de su ocupacion y buscaremos mostrar que paises fueron las mas productivos, y determinar porque factores.</h4>
@@ -81,7 +82,10 @@
   <br><br><br>  <br><br><br>
 
               <h2>2. Productividad según edad</h2>
-              <h3>El gráfico muestra la relación entre la edad de los astronautas y la cantidad de horas que pasan en misiones espaciales. Se han representado dos líneas, una para todos los astronautas y otra para aquellos que han tenido una edad de misión de 55 años o más. Además, se han incluido puntos que representan los valores promedio de horas de misión para cada edad, indicados por el color de relleno (blanco para todos los astronautas y azul para los mayores de 55 años). Se ha agregado una barra vertical roja que indica la edad en la que se registra la mayor cantidad de horas de misión promedio, y un texto que indica "Mejor edad promedio". El gráfico tiene ejes X e Y que indican la edad y las horas de misión, respectivamente.</h3>
+              <h3>El gráfico muestra la relación entre la edad de los astronautas y la cantidad de horas que pasan en misiones espaciales. 
+                Se han representado dos líneas, una para todos los astronautas y 
+                otra para aquellos que han tenido una edad de misión de 55 años o más debido a que en ese rango etario, es donde se trabajó mayor cantidad de horas. Lo cuál nos permite saber, si el lector del gráfico debe elegir un rango etario para elegir sus astronautas para realizar su próxima misión, deberian elegir personas de 55-60 años.
+                Además, se han incluido puntos que representan los valores promedio de horas de misión para cada edad, indicados por el color de relleno (blanco para todos los astronautas y azul para los mayores de 55 años). Se ha agregado una barra vertical roja que indica la edad en la que se registra la mayor cantidad de horas de misión promedio, y un texto que indica "Mejor edad promedio". El gráfico tiene ejes X e Y que indican la edad y las horas de misión, respectivamente.</h3>
                 
             </div>
           </div>
@@ -95,7 +99,7 @@
             <div class="title">
               <br><br><br><br> <br><br><br> 
               <h2>3. Ocupaciónes según genero</h2>
-              <h3>En este grafico, buscamos visualizar las ocupaciones de todos los astronautas, usando un grafico de barras para mostrar la cantidad de astronautas para cada ocupacion. Luego, para mas detalle, pintamos las barras mostrando cuales son los paieses que predominan en esos trabajos./h3>
+              <h3>En este grafico, buscamos visualizar las ocupaciones de todos los astronautas, usando un grafico de barras para mostrar la cantidad de astronautas para cada ocupacion. Luego, para mas detalle, pintamos las barras mostrando cuales son los paieses que predominan en esos trabajos.</h3>
                 <br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br> <br><br><br><br> <br><br><br><br> 
             </div>
           </div>
@@ -109,7 +113,7 @@
             <div class="title">
     <br><br><br><br><br><br><br><br>
               <h2>4. Productividad según Paises</h2>
-              <h3>En este grafico, observamos claramente que Estados Unidos, Italia,Rusia y Francia son los paieses que mas productivad en terminos de cantidad de horas de mision tinen. Algo interesante que vemos es que si comparamos la cantidad de horas de mision de Italia y Francia, a las de EEUU y Rusia, son relativamente parecidas. Pero si vemos cuantos astronautas tiene cada pais, vemos que las cantidades de EEUU y Rusia son altamente superiores a las de Italia y Francia, por lo que concluimos estos son paises mucho mas productivos y aprovechan bien sus recursos.</h3>
+              <h3>En este grafico, observamos claramente que Estados Unidos, Italia,Rusia y Francia son los paieses que mas productivad en terminos de cantidad de horas de mision tienen. Algo interesante que vemos es que si comparamos la cantidad de horas de mision de Italia y Francia, a las de EEUU y Rusia, son relativamente parecidas. Pero si vemos cuantos astronautas tiene cada pais, vemos que las cantidades de EEUU y Rusia son altamente superiores a las de Italia y Francia, por lo que concluimos estos son paises mucho mas productivos y aprovechan mejor sus recursos.</h3>
                 <br><br><br> <br><br><br><br> <br><br><br><br>
             </div>
           </div>
@@ -120,29 +124,37 @@
               <svg><div id="chart4"></div></svg>
               <br><br>
                <h2>5. Cantidad de Astronautas por continente</h2>
-              <h3>El gráfico muestra la cantidad de astronautas por país y continente. Los datos son filtrados para América, Asia y Europa. Cada continente tiene un gráfico de barras, donde cada barra representa un país y su altura indica la cantidad de astronautas que provienen de ese país. Los colores de las barras indican el continente al que pertenecen. La barra más alta en cada gráfico representa el país con la mayor cantidad de astronautas en ese continente. En cada gráfico también hay barras con una opacidad reducida que representan la cantidad de astronautas de otros países en ese continente. El gráfico tiene un estilo claro y simple y es fácil de leer y entender.</h3>
+              <h3>El gráfico muestra la cantidad de astronautas por país y continente. 
+                Los datos son filtrados para América, Asia y Europa. Cada continente tiene un gráfico de barras, 
+                donde cada barra representa un país y su altura indica la cantidad de astronautas que provienen de ese país. 
+                Los colores de las barras indican el continente al que pertenecen. La barra más alta en cada gráfico representa 
+                el país con la mayor cantidad de astronautas en ese continente. En cada gráfico también hay barras con una opacidad 
+                reducida que representan la cantidad de astronautas de otros países, de otros continentes</h3>
             </div><br> <br><br><br><br> <br><br><br><br><br><br><br><br>
           </div>
 
         <div class="block" id="6">
           <div class="texto_normal">
-            <h2><img src= "/vd_s1_tp2_Kullock_Gaido/exploracion/IMG/2Astro.webp" height="200" width="200"></h2>
+            <h2><img src= "/vd_s1_tp2_Kullock_Gaido/Principal/IMG/2Astro.webp" height="200" width="200"></h2>
               <h2>6. Conclusión</h2>
               <h3>A partir del análisis de los datos y gráficos proporcionados, se pueden obtener las siguientes conclusiones:
-
-                Nacionalidades de los astronautas:
+                <br><br>
+                Nacionalidades de los astronautas:<br>
                 Los Estados Unidos son el país con mayor cantidad de astronautas, seguido por Rusia y Canadá.
                 Los astronautas de América representan la mayor cantidad, seguido por Europa y Asia.
                 En general, existe una gran disparidad en la cantidad de astronautas por nacionalidad.
-                Duración de las misiones:
+                <br><br>
+                Duración de las misiones:<br>
                 Existe una gran variación en la duración de las misiones espaciales, desde pocas horas hasta más de un año.
                 Los astronautas femeninos parecen tener misiones más cortas en promedio que los astronautas masculinos.
                 Los astronautas de algunas nacionalidades parecen tener misiones más largas en promedio que otros.
-                Ocupaciones de los astronautas:
+                <br><br>
+                Ocupaciones de los astronautas:<br>
                 La mayoría de los astronautas tienen antecedentes militares o de ingeniería.
                 Hay una disparidad de género en ciertas ocupaciones, como la medicina y la biología.
                 Los hombres y las mujeres tienen una presencia relativamente equilibrada en ocupaciones como la física y la ingeniería.
-                Edad de los astronautas en las misiones:
+                <br><br>
+                Edad de los astronautas en las misiones:<br>
                 La mayoría de los astronautas tienen entre 30 y 50 años al momento de la misión.
                 Un número significativo de astronautas realizó misiones después de los 55 años.
                 Existen variaciones en la edad de los astronautas según la ocupación y la nacionalidad.
