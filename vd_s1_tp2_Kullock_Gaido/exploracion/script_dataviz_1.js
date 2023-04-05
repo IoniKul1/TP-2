@@ -1,4 +1,4 @@
-d3.csv("astronautass.csv", d3.autoType).then(data => {
+d3.csv('../exploracion/astronautass.csv', d3.autoType).then(data => {
   console.log(data)
   let datafilter = data.filter(d => d.edad_mision >= 55)
   console.log(datafilter)
@@ -26,7 +26,7 @@ d3.csv("astronautass.csv", d3.autoType).then(data => {
             y: "mean" }, 
           { x: "edad_mision", 
             y: "mision_hs", 
-            fill: "white"      
+            fill: "black"      
           }) 
           ),
           Plot.dot(datafilter, 
@@ -55,13 +55,12 @@ d3.csv("astronautass.csv", d3.autoType).then(data => {
           }),
         ],
     style: {
-      color: "white",
+      color: "black",
       fontFamily: "Helvetica",
       fontSize: "12px",
-      overflow: "visible",
-      background: "transparent",
+      overflow: "visible"
     }, color: {
-      legend: false,
+      legend: true,
       scheme: 'blues',
     
     },
@@ -74,7 +73,6 @@ d3.csv("astronautass.csv", d3.autoType).then(data => {
     marginLeft: 100,
     marginTop: 50,
     marginBottom: 50,
-    
     x: {
       label:"Edades",
       ticks: 4,
@@ -86,4 +84,6 @@ d3.csv("astronautass.csv", d3.autoType).then(data => {
   })
   // Agregamos chart al div#chart de index.html
   d3.select('#chart1').append(() => chart1)
+  chart1.draw();
+  
 })

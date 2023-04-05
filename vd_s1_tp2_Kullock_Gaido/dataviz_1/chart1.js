@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 d3.csv('astronautass.csv', d3.autoType).then(data => {
+=======
+d3.csv("astronautass.csv", d3.autoType).then(data => {
+>>>>>>> Stashed changes
   console.log(data)
   let datafilter = data.filter(d => d.edad_mision >= 55)
   console.log(datafilter)
