@@ -45,7 +45,7 @@ d3.csv('astronautass.csv', d3.autoType).then((data) => {
      insetRight: 10,
      x: {
       label:"OCUPACIONES",
-      tickRotate: -30,
+      tickRotate: -31,
       tickSize: 10,
      },
      y: {
